@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+    <!-- js cdn link  -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css"
+        integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Fredoka', sans-serif;
+        }
+        .header-1 {
+            background-color: rgb(201, 200, 200);
+            font-family: "Montserrat", sans-serif;
+        }
+
+        ul ul li a {
+           
+            text-decoration: none !important;
+        }
+
+
+        ul ul ul li {
+            text-decoration: none !important;
+            list-style-type: none;
+
+            position: relative;
+            left: 178px;
+            display: list-item;
+            width: 170px;
+            background-color: white;
+            /* float: none; */
+            position: relative;
+            /* left: 90px; */
+
+        }
+
+        /* hide dropdown  */
+        nav ul ul ul {
+            display: none;
+
+            position: absolute;
+            top: -50px;
+
+
+        }
+
+        /* display dropdown in  hover */
+        nav ul li:hover>ul {
+            display: block;
+        }
+        .banner {
+            height: 350px;
+            width: 100%;
+            background-image: url('./images/images/2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+
+
+        }
+
+        .background1 {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to left, rgba(18, 4, 177, 0.4), rgb(14, 34, 85));
+
+        }
+
+
+        
+       
+        .icon i {
+            font-size: 50px;
+            color: #699bc9;
+        }
+
+        .hr {
+            height: 1px;
+            width: 100%;
+            background-color: #707070;
+
+        }
+
+
+        .socia-media {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+
+        }
+
+        .card-header:hover .socia-media {
+            opacity: 1;
+
+        }
+
+
+        .doc_bg_img {
+            background-image: url('./images/images/img_g.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        .background3 {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to left, rgba(35, 16, 235, 0.4), rgb(8, 33, 98));
+
+        }
+        .footer {
+            background-image: url('./images/images/img_c.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .sub_sec3 li:hover {
+            color: #5f8ddd;
+        }
+        .background2 {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(to left, rgba(18, 4, 177, 0.4), rgb(14, 34, 85));
+
+        }
+        .underline {
+            /* border-bottom: solid black 3px; */
+            width: 70px;
+            height: 4px;
+            background-color: #00aeef;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row header-1">
+            <div class="col-xl-12 col-lg-12 col-md-12  col-sm-12 col-12 text-center text-secondary">
+                <div class="row">
+
+                    <div class="col-md-3 col-sm-12 col-lg-3 col-xl-3 col-12 "> <i
+                            class="bi bi-geo-alt-fill text-info ml-2 "></i>28 Jackson
+                        Street, Chicago, 7788569 USA</div>
+                    <div class="col-md-3 col-sm-12 col-lg-3 col-xl-3 col-12 "><i
+                            class="bi bi-envelope-fill text-info ml-2"></i> info.dento@gmail.com
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-lg-6 col-xl-6 col-12  text-secondary text-center"> <span>
+                            <i class="bi bi-facebook mx-1 "></i>
+                            <i class="bi bi-twitter mx-1"></i>
+                            <i class="fa-brands fa-google-plus-g mx-1"></i>
+                            <i class="bi bi-linkedin mx-1"></i>
+                            <i class="bi bi-pinterest mx-1"></i>
+                        </span></div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+   
+    <div class="container-fluid p-0 " style="position:sticky; top: 0;z-index: 1;">
+        <div class="row header-2 no-gutters ">
+            <div class="col-xl-12 col-lg-12 col-md-12  col-sm-12 col-12 w-100 ">
+
+                <nav class="navbar navbar-expand-lg navbar-light  bg-light  "
+                    style="position:sticky; top: 0;z-index: 1; ">
+
+                    <div class="container">
+                        <div class="row">
+                                <a class="navbar-brand ml-3 " href="#"><img src="./images/logo.webp" alt=""></a>
+                           
+
+
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+                                <span class="navbar-toggler-icon "></span>
+                            </button>
+
+
+
+
+
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto ">
+                                        <li class="nav-item ">
+                                            <a class="nav-link text-dark  ml-3 mr-3 " href="./final.html">HOME <span
+                                                    class="sr-only">(current)</span></a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button"
+                                                data-toggle="dropdown">PAGES</a>
+
+                                            <div class="dropdown-menu ">
+                                                <a href="./final.html" class="dropdown-item">Home</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a href="./About.html" class="dropdown-item">About Us</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a href="./Service.html" class="dropdown-item">Services</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a href="./Pricing.html" class="dropdown-item">Price</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a href="./Blog.html" class="dropdown-item">Blog</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a href="./Contact.html" class="dropdown-item">Contact</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a href="#" class="dropdown-item dropdown-toggle"
+                                                    data-toggle="dropdown">Dropdown</a>
+
+                                                <div class="dropdown-menu "
+                                                    style="margin-left:160px;margin-top:-40px; ">
+                                                    <ul style="list-style-type: none;">
+                                                        <li> <a href="#" class="dropdown-item ">Dropdown item</a></li>
+                                                        <li>
+                                                            <div class="dropdown-divider"></div>
+
+
+
+
+
+                                                        <li> <a href="#" class="dropdown-item  "
+                                                                data-toggle="dropdown">Dropdown item<i
+                                                                    class="bi bi-caret-right-fill p-1 "></i></a>
+                                                            <ul class="p-2 mt-5 text-dark">
+                                                                <li class=" text-center"><a href="#"
+                                                                        class="text-dark">Even Dropdown</a></li>
+                                                                <li class="py-1">
+                                                                    <hr>
+                                                                </li>
+                                                                <li class="text-center"><a href="#"
+                                                                        class="text-dark">Even Dropdown</a></li>
+                                                                <li class="py-1">
+                                                                    <hr>
+                                                                </li>
+                                                                <li class="text-center"><a href="#"
+                                                                        class="text-dark">Even Dropdown</a></li>
+                                                                <li class="py-1">
+                                                                    <hr>
+                                                                </li>
+                                                                <li class="text-center"><a href="#"
+                                                                        class="text-dark">Even Dropdown</a></li>
+
+                                                            </ul>
+
+
+
+                                                        </li>
+
+                                                       
+
+
+                                                        <li>
+                                                            <div class="dropdown-divider"></div>
+                                                        </li>
+                                                        <li> <a href="#" class="dropdown-item">Dropdown item</a></li>
+                                                        <li>
+                                                            <div class="dropdown-divider"></div>
+                                                        </li>
+                                                        <li> <a href="#" class="dropdown-item">Dropdown item</a></li>
+
+
+
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark mx-2" href="./About.html">ABOUT</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark mx-2" href="./Service.html">SERVICE</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark mx-2" href="./Pricing.html">PRICING</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link text-dark dropdown-toggle" href="#" role="button"
+                                                data-toggle="dropdown">BLOG</a>
+
+                                            <div class="dropdown-menu">
+
+                                                <a href="./Blog.html" class="dropdown-item"> Blog  </a>
+                                                <div class="dropdown-divider"></div>
+                                                <a href="./Blog_details.html" class="dropdown-item">Blog Details
+
+                                                </a>
+
+                                            </div>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-dark mx-2" href="./Contact.html">CONTACT</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+
+
+
+
+                                <button class="btn bg-primary text-light px-5  py-2 mx-5 mt-2 mb-2"
+                                    style="position: relative;">BookingNow</button>
+                            
+
+                        </div>
+                    </div>
+
+                </nav>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-12 col-lg-12 col-xl-12 col-md-12 col-sm-12 ">
+            <div class="banner">
+            <div class="background1"><center><br><br><br><br>
+                <h1 class="text-light  py-5">Contact</h1></center>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-3">
+
+                <span class="d-flex mt-1">
+                <i class="bi bi-house-door-fill mx-2 "></i><h6 class="font-weight-bold mt-1">Home </h6> <h6 class="text-secondary  mt-1 ml-1"> > Contact</h6>
+            </span>
+            </div>
+        </div>
+    </div>
+
+    
+
+<!-- --------------------map------------- -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+                
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106532.10845768434!2d73.79029048163784!3d18.53472253519205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c1bb3d48b833%3A0x5425fb0ede90950b!2sSmileCircle%20Dental%20Treatments%20Pune!5e0!3m2!1sen!2sin!4v1701104986401!5m2!1sen!2sin"
+    width="100%" height="500" style="border:0; margin-top: 100px; " allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade" class="mb-5"></iframe>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------Address & Contact------------------ -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12 mt-5">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="s1  text-light p-5" style="background-color: #5f8ddd;">
+                            <h5 class="font-weight-bold mt-2">Address</h5>
+                            <h6 class="mt-3">28 Jackson Street, Chicago, 7788569 USA</h6>
+                
+                
+                          <h5 class="font-weight-bold mt-3"> Phone</h5> 
+                          <h6 class="mt-3">+84. 2252. 2250. 122</h6>
+                
+                         
+                
+                          <h5 class="font-weight-bold mt-3"> Fax</h5> 
+                          <h6 class="mt-3">+84. 2252. 2250. 125</h6>
+                          <h5 class="font-weight-bold mt-3"> Email</h5> 
+                          <h6 class="mt-3">info.dento@gmail.com</h6>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 col-12">
+                        <div class="container">
+                            <div class="row">
+                                  <div class="mx-3">
+                                <h2 class="font-weight-bold ">Get In Touch</h2>
+                                <div class="underline my-4"></div></div>
+                                <div class="col-12 ">
+                                    <div class="row">
+        
+        
+                                        
+
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <form class="d-flex ">
+                                                <input type="text" placeholder="Your Name"
+                                                    class="form-control  font-italic   h-100 py-3 my-3"
+                                                     />
+                                            </form>
+                                        </div>
+        
+        
+        
+        
+        
+                                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                            <form class="d-flex ">
+                                                <input type="tel" placeholder="Your Phone"
+                                                    class="form-control font-italic  h-100 py-3 my-3"
+                                                     />
+                                            </form>
+                                        </div>
+        
+        
+                                        
+                                       <br>
+                                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                            <form class="d-flex ">
+                                                <textarea class="form-control font-italic  p-5 my-3"
+                                                    > Your Message</textarea>
+                                            </form>
+                                        </div>
+        
+                                    </div>
+                                    <br><br>
+                                    <button class="btn btn-primary px-5 px-2 mb-5">Reply</button>
+                                    
+                                </div>
+                            </div>
+        
+        
+        
+        
+        
+        
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------FOOTER------------ -->
+    
+    <div class="container-fluid p-0">
+        <div class="row no-gutters">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mt-5">
+                <div class="footer ">
+                    <div class="background2">
+                        <div class="container" style="padding-top: 150px;">
+
+                            <div class="row text-light">
+                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 ">
+                                    <div class="sub_sec1 py-5 pl-5">
+                                        <img src="./images/images/logo.webp" class="w-50">
+                                        <h6 class="mt-3">Etiam sutor
+                                            risus,
+                                            dapibus act elefend katen, lacinia sitamet denim. Mauris sagittis kansa
+                                            interdum
+                                            dignissim.</h6>
+                                        <br>
+                                        <h6> <a href="#"> <i class="fa-solid fa-location-dot"
+                                                    style="color: #00aeef;"></i></a>Jackson Street, Chicago, 7788569 USA
+                                        </h6>
+                                        <h6> <a href="#"> <i class="fa-solid fa-phone"
+                                                    style="color: #00aeef;"></i></a>+84. 2252.
+                                            2250. 122</h6>
+                                        <h6> <a href="#"> <i class="fa-solid fa-envelope"
+                                                    style="color: #00aeef;"></i></a>
+                                            info.dento@gmail.com</h6>
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12">
+                                    <div class="sub_sec2  py-5">
+                                        <h3 style=" color: white;display: inline;" class="mt-5 ml-4">Opening Hours
+                                        </h3><br><br>
+                                        <div class="d-flex ">
+                                            <div class="part_1">
+                                                <ul style="list-style-type: none;">
+                                                    <li>Mon-Wed</li>
+                                                    <li>Thu-Fri</li>
+                                                    <li>Sat</li>
+                                                    <li>Sun</li>
+                                                    <li>Holiday</li>
+                                                </ul>
+                                            </div>
+                                            <div class="part_2 ">
+                                                <ul style="list-style-type: none;">
+                                                    <li>8.00-18.00</li>
+                                                    <li>8.00-17.00</li>
+                                                    <li>9.00-17.00</li>
+                                                    <li>10.00-17.00</li>
+                                                    <li>closed</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12 col-12">
+                                    <div class="sub_sec3 h-75">
+                                        <h3 class="text-light mt-5 ml-2 ">Quick Links
+                                        </h3>
+
+                                        <div class="p_3  mt-4">
+                                            <div class="row d-flex" style="justify-content:space-around;">
+                                                <div class="col-6">
+                                                    <div class="part_3  ">
+                                                        <ul style="list-style-type: none; " class="text-light">
+                                                            <li class="text-light">About</li>
+                                                            <li>Contact</li>
+                                                            <li>Newsd</li>
+                                                            <li>Careersd</li>
+                                                            <li>Servicesd</li>
+
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="part_4  " style="margin-left: -20px;">
+                                                        <ul style="list-style-type: none;" class="text-light">
+                                                            <li>FAQs</li>
+                                                            <li>Policy</li>
+                                                            <li>Advisers</li>
+                                                            <li>Dentists</li>
+                                                            <li>Legals</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12 col-12 ">
+                                    <div class="sub_sec4 pl-2">
+                                        <h3 class="text-light text-left mt-5 ml-2">Newsletter
+                                        </h3>
+                                        <br>
+                                        <h6 class="ml-2">We will send out weekly newest article and some great offers
+                                        </h6><br>
+
+                                        <div class="form">
+                                            <div class="form-group">
+                                                <span class="d-flex">
+                                                    <input type="email" class="form-control ml-2"
+                                                        id="exampleInputEmail1" placeholder="email">
+                                                    <button class="btn btn-primary" type="submit">
+                                                        <i class="fa-regular fa-paper-plane"></i>
+                                                    </button></span>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class=" text-light text-center"> <span class="icons">
+                                                <i class="bi bi-facebook mx-1"></i>
+                                                <i class="bi bi-twitter mx-1"></i>
+                                                <i class="fa-brands fa-google-plus-g mx-1"></i>
+                                                <i class="bi bi-linkedin mx-1"></i>
+                                                <i class="bi bi-pinterest mx-1"></i>
+                                            </span></div>
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+                            <br><br>
+                            <hr class="bg-light">
+
+                            <h6 class="text-center text-light pb-2" style="font-size: 15px;">Copyright ©2023 All rights
+                                reserved | This template is made with by Colorlib</h6>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
